@@ -1,1 +1,41 @@
-/data
+# --- Python / venv ---
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pkl
+*.log
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+# (Tieni i notebook versionati; ignora solo i checkpoints)
+
+# --- VSCode ---
+.vscode/
+
+# --- Sistema / OS ---
+.DS_Store
+Thumbs.db
+
+# --- Dati & DB (mantieni solo un README in data/) ---
+data/
+
+# Formati comuni dati/db (se finiscono altrove)
+*.csv
+*.tsv
+*.xlsx
+*.parquet
+*.db
+*.sqlite
+*.duckdb
+
+# --- Output dashboard/esportazioni pesanti ---
+dash/exports/**
+dash/*.png
+dash/*.pdf
+dash/*.twbx
+
+# --- Segreti locali (se li usi) ---
+.env
+.env.*
